@@ -12,9 +12,9 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: [ubuntu-latest]
-        php-versions: ['8.4', '8.5']
+        php-versions: ["8.4", "8.5"]
         dependency-stability: [prefer-stable]
-        laravel: ['12.*', '13.*']
+        laravel: ["12.*", "13.*"]
         include:
           - laravel: 12.*
             testbench: 10.*
@@ -54,5 +54,5 @@ jobs:
       - name: Execute tests (Unit and Feature tests) via PHPUnit
         env:
           DB_CONNECTION: sqlite
-          DB_DATABASE: :memory:
+          DB_DATABASE: ":memory:"
         run: vendor/bin/phpunit --testdox
