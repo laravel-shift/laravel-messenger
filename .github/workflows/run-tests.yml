@@ -37,6 +37,9 @@ jobs:
           - laravel: 12.*
             testbench: 10.*
             dbal: ^4.2
+          - laravel: 13.*
+            testbench: 11.*
+            dbal: ^4.2
         exclude:
           - laravel: 6.*
             php-versions: 8.1
